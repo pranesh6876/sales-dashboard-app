@@ -1,0 +1,180 @@
+{
+  "type": "Topology",
+  "objects": {
+    "IND_adm1": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Andhra Pradesh" },
+          "arcs": [[0]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Arunachal Pradesh" },
+          "arcs": [[1]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Assam" },
+          "arcs": [[2]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Bihar" },
+          "arcs": [[3]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Chhattisgarh" },
+          "arcs": [[4]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Goa" },
+          "arcs": [[5]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Gujarat" },
+          "arcs": [[6]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Haryana" },
+          "arcs": [[7]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Himachal Pradesh" },
+          "arcs": [[8]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Jharkhand" },
+          "arcs": [[9]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Karnataka" },
+          "arcs": [[10]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Kerala" },
+          "arcs": [[11]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Madhya Pradesh" },
+          "arcs": [[12]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Maharashtra" },
+          "arcs": [[13]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Manipur" },
+          "arcs": [[14]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Meghalaya" },
+          "arcs": [[15]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Mizoram" },
+          "arcs": [[16]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Nagaland" },
+          "arcs": [[17]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Odisha" },
+          "arcs": [[18]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Punjab" },
+          "arcs": [[19]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Rajasthan" },
+          "arcs": [[20]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Sikkim" },
+          "arcs": [[21]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Tamil Nadu" },
+          "arcs": [[22]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Telangana" },
+          "arcs": [[23]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Tripura" },
+          "arcs": [[24]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Uttar Pradesh" },
+          "arcs": [[25]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "Uttarakhand" },
+          "arcs": [[26]]
+        },
+        {
+          "type": "Polygon",
+          "properties": { "NAME_1": "West Bengal" },
+          "arcs": [[27]]
+        }
+      ]
+    }
+  },
+  "arcs": [
+    [[1, 1], [1, 0], [1, 1]],
+    [[2, 2], [2, 0], [1, 1]],
+    [[3, 2], [2, -1], [1, 1]],
+    [[4, 2], [1, -1], [1, 1]],
+    [[5, 2], [0, -1], [1, 1]],
+    [[6, 2], [-1, -1], [1, 1]],
+    [[7, 2], [-2, -1], [1, 1]],
+    [[8, 2], [-2, 0], [1, 1]],
+    [[9, 2], [-2, 1], [1, 1]],
+    [[10, 2], [-1, 2], [1, 1]],
+    [[11, 2], [0, 2], [1, 1]],
+    [[12, 2], [1, 2], [1, 1]],
+    [[13, 2], [2, 2], [1, 1]],
+    [[14, 2], [2, 1], [1, 1]],
+    [[15, 2], [2, 0], [1, 1]],
+    [[16, 2], [1, -2], [1, 1]],
+    [[17, 2], [0, -2], [1, 1]],
+    [[18, 2], [-1, -2], [1, 1]],
+    [[19, 2], [-2, -2], [1, 1]],
+    [[20, 2], [-2, -1], [1, 1]],
+    [[21, 2], [-2, 0], [1, 1]],
+    [[22, 2], [-2, 1], [1, 1]],
+    [[23, 2], [-2, 2], [1, 1]],
+    [[24, 2], [-1, 2], [1, 1]],
+    [[25, 2], [0, 1], [1, 1]],
+    [[26, 2], [1, 1], [1, 1]],
+    [[27, 2], [2, 1], [1, 1]]
+  ],
+  "transform": { "scale": [0.01, 0.01], "translate": [68, 8] }
+}

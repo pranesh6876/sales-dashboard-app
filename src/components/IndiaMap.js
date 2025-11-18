@@ -5,6 +5,7 @@ import {
   Geography,
   Marker,
 } from "react-simple-maps";
+import geoData from "../india.geo.json";
 
 export default function IndiaMap({
   onSelectState,
@@ -12,7 +13,7 @@ export default function IndiaMap({
   onHoverState,
 }) {
   // we will fetch the topojson from public folder — place it at /public/india.topo.json
-  const INDIA_TOPO_URL = "/india.geo.json";
+  // const INDIA_TOPO_URL = "/india.geo.json";
   const [tooltip, setTooltip] = useState(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
@@ -24,14 +25,16 @@ export default function IndiaMap({
     <div onMouseMove={handleMouseMove} style={{ position: "relative" }}>
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ scale: 1000, center: [78.9629, 22.5937] }}
+        projectionConfig={{
+          scale: 1400,
+          center: [82.8, 22.7],
+        }}
         width={800}
-        height={520}
+        height={600}
       >
-        <Geographies geography={INDIA_TOPO_URL}>
+        <Geographies geography={geoData}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              // try multiple possible property names to ensure compatibility
               const props = geo.properties || {};
               const stateName =
                 props.st_nm ||
@@ -79,7 +82,7 @@ export default function IndiaMap({
         </Geographies>
 
         {/* markers for distribution centers (markers array contains {name, coordinates}) */}
-        {markers.map((m, i) => (
+        {/* {markers.map((m, i) => (
           <Marker key={i} coordinates={m.coordinates}>
             <circle r={2.5} fill="#DC2626" stroke="#ffffff" strokeWidth={1} />
             <text
@@ -94,30 +97,30 @@ export default function IndiaMap({
               {m.name}
             </text>
           </Marker>
-        ))}
-        {/* {markers.map((m, i) => (
-          // <Marker key={i} coordinates={m.coordinates}>
-          //   <circle
-          //     r={2.5}
-          //     fill="#DC2626" // red dot
-          //     stroke="#ffffff" // white outline
-          //     strokeWidth={1}
-          //   />
-          // </Marker>
-          <Marker key={i} coordinates={m.coordinates}>
-            <svg
-              width={10}
-              height={10}
-              viewBox="0 0 24 24"
-              style={{ transform: "translate(-5px, -5px)" }}
-            >
-              <path
-                fill="#DC2626"
-                d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7z"
-              />
-            </svg>
-          </Marker>
         ))} */}
+        {markers.map((m, i) => (
+          <Marker key={i} coordinates={m.coordinates}>
+            <circle
+              r={2.5}
+              fill="#DC2626" // red dot
+              stroke="#ffffff" // white outline
+              strokeWidth={1}
+            />
+          </Marker>
+          // <Marker key={i} coordinates={m.coordinates}>
+          //   <svg
+          //     width={10}
+          //     height={10}
+          //     viewBox="0 0 24 24"
+          //     style={{ transform: "translate(-5px, -5px)" }}
+          //   >
+          //     <path
+          //       fill="#DC2626"
+          //       d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7z"
+          //     />
+          //   </svg>
+          // </Marker>
+        ))}
       </ComposableMap>
 
       {tooltip && (

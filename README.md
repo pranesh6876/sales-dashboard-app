@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project description
+This will create Client and Sales dashboard where sales data will be shown. Currently data is static in the code, later on this will be integrated with backedn APIs to get data from db.
+
 ## Available Scripts
 
 In the project directory, you can run:

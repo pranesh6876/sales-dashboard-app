@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sales-dashboard-app/static/css/main.02374669.css",
-    "main.js": "/sales-dashboard-app/static/js/main.03a7aeac.js",
+    "main.js": "/sales-dashboard-app/static/js/main.ae0781dd.js",
     "index.html": "/sales-dashboard-app/index.html",
     "main.02374669.css.map": "/sales-dashboard-app/static/css/main.02374669.css.map",
-    "main.03a7aeac.js.map": "/sales-dashboard-app/static/js/main.03a7aeac.js.map"
+    "main.ae0781dd.js.map": "/sales-dashboard-app/static/js/main.ae0781dd.js.map"
   },
   "entrypoints": [
     "static/css/main.02374669.css",
-    "static/js/main.03a7aeac.js"
+    "static/js/main.ae0781dd.js"
   ]
 }
